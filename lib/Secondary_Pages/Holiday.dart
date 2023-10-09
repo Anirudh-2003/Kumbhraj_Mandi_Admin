@@ -116,7 +116,15 @@ class _Holiday extends State<Holiday> {
                             icon: Icon(Icons.note),
                           ),
                         ),
-                      )
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(12.0),
+                        child: ElevatedButton(
+                            onPressed: () => _showToast(context),
+                            child: Text("Mark Moliday"),
+                            style: TextButton.styleFrom(),
+                        ),
+                      ),
                     ],
                   ),
                 )
@@ -124,4 +132,13 @@ class _Holiday extends State<Holiday> {
         )
     );
   }
+}
+
+void _showToast(BuildContext context) {
+  final scaffold = ScaffoldMessenger.of(context);
+  scaffold.showSnackBar(
+    SnackBar(
+      content: const Text('Added Sucessfully'),
+    ),
+  );
 }
