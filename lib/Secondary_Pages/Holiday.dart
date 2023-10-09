@@ -7,6 +7,7 @@ class MyHoliday extends StatelessWidget {
     return MaterialApp(
       home: Holiday(),
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(primarySwatch: Colors.green),
     );
   }
 }
