@@ -32,7 +32,7 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, MyRoutes.holidayRoute);
               }),
           ListTile(
-            leading: Icon(CupertinoIcons.money_dollar, color: Colors.white),
+            leading: Icon(Icons.currency_rupee, color: Colors.white),
             title: Text(
               "Set Prices For Weeds",
               style: TextStyle(color: Colors.white),

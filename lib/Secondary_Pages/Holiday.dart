@@ -121,7 +121,7 @@ class _Holiday extends State<Holiday> {
                         padding: const EdgeInsets.all(12.0),
                         child: ElevatedButton(
                             onPressed: () => _showToast(context),
-                            child: Text("Mark Moliday"),
+                            child: Text("Mark Holiday"),
                             style: TextButton.styleFrom(),
                         ),
                       ),
