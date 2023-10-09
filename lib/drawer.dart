@@ -53,6 +53,17 @@ class MyDrawer extends StatelessWidget {
                 Navigator.pushNamed(context, MyRoutes.storageRoute);
               }
           ),
+          ListTile(
+              leading: Icon(CupertinoIcons.house, color: Colors.white),
+              title: Text(
+                "Storage Availability",
+                style: TextStyle(color: Colors.white),
+                textScaleFactor: 1.3,
+              ),
+              onTap: () {
+                Navigator.pushNamed(context, MyRoutes.availableRoute);
+              }
+          ),
         ]),
       ),
     );

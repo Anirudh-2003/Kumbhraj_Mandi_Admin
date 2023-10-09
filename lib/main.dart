@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kumbhraj_mandi_admin/Secondary_Pages/Availability.dart';
 import 'package:kumbhraj_mandi_admin/Secondary_Pages/Holiday.dart';
 import 'package:kumbhraj_mandi_admin/Secondary_Pages/Price.dart';
 import 'package:kumbhraj_mandi_admin/Secondary_Pages/storage.dart';
@@ -23,6 +24,7 @@ class MyApp extends StatelessWidget {
         MyRoutes.holidayRoute: (context) => MyHoliday(),
         MyRoutes.priceRoute: (context) => MyPrice(),
         MyRoutes.storageRoute: (context) => MyStorage(),
+        MyRoutes.availableRoute: (context) => MyAvailable(),
       },
     );
   }
